@@ -75,12 +75,12 @@ async function changeBackground() {
     var jsonResponse = await response.json();
     var time = jsonResponse.datetime.slice(11,13);
     console.log(time);
-    if(time>=18 && time<=5){
-     backgroundImage="sprites/bg2.jpg";  
+    if(time>=6 && time<=18){
+     backgroundImage="sprites/bg.png";  
      
   }
   else{
-      backgroundImage="sprites/bg.png";
+      backgroundImage="sprites/bg2.jpg";
   } 
   backgroundImg = loadImage(backgroundImage);
 }
